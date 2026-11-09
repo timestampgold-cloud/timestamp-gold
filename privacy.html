@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Timestamp Gold Studio</title>
+<meta name="description" content="How Timestamp Gold Studio, a privately operated video studio app, handles data.">
+<meta name="robots" content="index, follow">
+<style>
+:root{--bg:#0d0d0d;--card:#161616;--line:#2a2a2a;--text:#ececec;--muted:#b4b4b4;--gold:#ffd60a}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--gold);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:#000;padding:10px 14px;font-weight:700}
+.skip:focus{left:8px;top:8px;color:#000}
+header,main,footer{max-width:760px;margin:0 auto;padding:0 20px}
+header{padding-top:28px;border-bottom:1px solid var(--line);padding-bottom:18px}
+.brand{font-weight:800;letter-spacing:.14em;color:var(--gold);font-size:14px;text-transform:uppercase;text-decoration:none}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.2;margin:14px 0 6px}
+.meta{color:var(--muted);margin:0;font-size:15px}
+nav ul{list-style:none;padding:0;margin:14px 0 0;display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
+main{padding-top:8px;padding-bottom:40px}
+h2{font-size:22px;color:var(--gold);margin:36px 0 8px;line-height:1.3}
+h3{font-size:18px;margin:22px 0 4px}
+p,li{max-width:70ch}
+ul{padding-left:22px}
+li{margin:4px 0}
+.summary{background:var(--card);border-left:4px solid var(--gold);border-radius:10px;padding:14px 18px;margin:22px 0}
+.summary p{margin:6px 0}
+.table-wrap{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px}
+caption{text-align:left;color:var(--muted);padding-bottom:6px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--card);color:var(--gold)}
+code{background:var(--card);padding:1px 5px;border-radius:4px;font-size:.92em}
+footer{border-top:1px solid var(--line);padding-top:18px;padding-bottom:40px;color:var(--muted);font-size:15px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header>
+  <a class="brand" href="index.html">Timestamp Gold</a>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Timestamp Gold Studio · Published and effective <time datetime="2026-11-09">9 November 2026</time></p>
+  <nav aria-label="Legal pages"><ul>
+    <li><a href="privacy.html" aria-current="page">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms of Service</a></li>
+  </ul></nav>
+</header>
+
+<main id="content">
+<div class="summary" role="note" aria-label="Summary">
+  <p><strong>In short:</strong> Timestamp Gold Studio is a private app that runs on its operator's own computer. It makes short videos for two channels, Timestamp Stories and Timestamp Clips, and posts them to the operator's own YouTube, Facebook, Instagram and TikTok accounts using each platform's official API.</p>
+  <p>It is not a public service. Nobody else can sign up. It does not sell data, show ads, or track the people who watch the videos.</p>
+</div>
+
+<h2 id="who">1. Who this policy covers</h2>
+<p>"Timestamp Gold Studio" (the "app") is a privately operated web app. It runs on a single personal computer and is used only by its operator ("I", "me"). It produces and manages short videos for two brands:</p>
+<ul>
+  <li><strong>Timestamp Stories</strong>: AI-assisted serialised fiction.</li>
+  <li><strong>Timestamp Clips</strong>: short clips cut from longer videos.</li>
+</ul>
+<p>The only accounts connected to the app are my own social media accounts for these brands. This policy explains what data the app handles when it connects to those accounts. It also covers the limited data it receives about the videos it publishes.</p>
+<p>The app has no public sign-up and no customer accounts. Visiting this page does not collect anything through the app.</p>
+
+<h2 id="collect">2. What data the app handles</h2>
+
+<h3>2.1 Connected platform accounts</h3>
+<p>When I connect one of my accounts, the platform sends the app sign-in credentials (OAuth tokens) and some basic account details. The app stores:</p>
+<div class="table-wrap">
+<table>
+  <caption>Data stored per connected platform</caption>
+  <thead><tr><th scope="col">Platform</th><th scope="col">What is stored</th></tr></thead>
+  <tbody>
+    <tr><td>TikTok</td><td>Access token, refresh token, token expiry time, the granted permissions (scopes), the account's <code>open_id</code>, and its display name.</td></tr>
+    <tr><td>YouTube (Google)</td><td>Access and refresh tokens, token expiry time, the channel's ID and title, and the IDs of playlists the app created.</td></tr>
+    <tr><td>Facebook / Instagram (Meta)</td><td>A Facebook Page access token, the Page's ID and name, and the linked Instagram account's ID and username.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>The app also stores the developer-app keys (client ID and secret) that I created on each platform for this app.</p>
+
+<h3>2.2 TikTok specifically</h3>
+<p>The app uses TikTok Login Kit and the Content Posting API with exactly two permissions:</p>
+<ul>
+  <li><code>user.info.basic</code>: used once after sign-in to read the account's display name, so the dashboard can show which account is connected.</li>
+  <li><code>video.upload</code>: used to upload a finished video to the TikTok account as a <strong>draft</strong>. The draft lands in my TikTok inbox. I then review, edit, label and publish it myself inside the TikTok app.</li>
+</ul>
+<p>The app does <strong>not</strong> use Direct Post. It does not publish to TikTok directly. It does not read TikTok followers, messages, comments, contacts, other users' videos, or TikTok analytics.</p>
+
+<h3>2.3 Videos and content</h3>
+<ul>
+  <li><strong>Story videos:</strong> scripts, pictures, voice-overs and finished videos created on my computer with locally run AI tools.</li>
+  <li><strong>Clip videos:</strong> to make clips, the app downloads longer videos from links I choose and transcribes their speech on my computer. It then saves the clip files and their transcripts, titles and captions. Those source videos may show or name people. That material is used only to make the clips.</li>
+  <li><strong>Post records:</strong> titles, captions, schedule times, which platforms each video was sent to, the post ID or link each platform returned, and any error messages.</li>
+</ul>
+
+<h3>2.4 Performance figures for published videos</h3>
+<p>For videos published on my own accounts, the app may fetch <strong>aggregate</strong> figures from YouTube and Meta. These are views, average watch time, average percentage watched, and like and comment <em>counts</em>. It uses them to decide posting times, video lengths and styles.</p>
+<p>It does not fetch who watched, liked or commented. It does not fetch the text of comments, or any viewer's profile. It does not fetch any TikTok analytics.</p>
+
+<h3>2.5 Operational logs</h3>
+<p>The app keeps a job history and status messages: what was processed, when, and any error text. It also keeps small status files, such as graphics-card temperature readings and AI usage records. These do not contain viewer information.</p>
+
+<h2 id="use">3. How the data is used</h2>
+<ul>
+  <li>To sign in to my accounts and keep those connections working (refreshing expired tokens).</li>
+  <li>To upload videos I have made to my own accounts. On TikTok, that means sending drafts to my inbox.</li>
+  <li>To show on my dashboard which accounts are connected and what has been posted.</li>
+  <li>On YouTube, Facebook and Instagram only, when I switch it on: to post a comment on my own earlier video linking to the next part of a story series, and to add story parts to a playlist on my channel.</li>
+  <li>To use aggregate performance figures to improve future videos and posting times.</li>
+</ul>
+<p>Data is not used for advertising, profiling individuals, or selling, and is not used for anything unrelated to running my own channels.</p>
+
+<h2 id="storage">4. Where data is stored and how it is protected</h2>
+<ul>
+  <li>Everything the app stores is kept on my own computer, in the app's local data folder. That includes tokens, account details, post records, performance figures, logs and video files.</li>
+  <li>Tokens and account details are kept in a local file (<code>accounts.json</code>). They are <strong>not encrypted</strong> by the app. They are protected by the computer's own user account and by not being placed anywhere public.</li>
+  <li>Post records and performance figures are kept in a local SQLite database.</li>
+  <li>The app's dashboard is meant only for my own use, on my computer and my private network. It has no public web address.</li>
+  <li>This public website is separate from the app. It is static pages only, with no sign-in, no tokens, no secrets and no link to the dashboard.</li>
+</ul>
+<p>No method of storage is completely secure, and I can't promise absolute security.</p>
+
+<h2 id="sharing">5. Who receives data</h2>
+<p>I do not sell or rent data, and I do not share it with advertisers or data brokers. The app sends data only to the services needed to do its job:</p>
+<div class="table-wrap">
+<table>
+  <caption>Third-party services the app sends data to</caption>
+  <thead><tr><th scope="col">Service</th><th scope="col">What is sent and why</th></tr></thead>
+  <tbody>
+    <tr><td>TikTok</td><td>Sign-in requests and the finished video file, uploaded as a draft to my account.</td></tr>
+    <tr><td>Google / YouTube</td><td>Sign-in requests, the video file, its title, description, tags and AI-content label, playlist and comment requests, and requests for my channel's aggregate analytics. Source videos are also downloaded from YouTube for clips. If YouTube requires it, that download uses my own browser's YouTube sign-in.</td></tr>
+    <tr><td>Meta (Facebook and Instagram)</td><td>Sign-in requests, the video file, its caption and AI-content label, comment requests, and requests for aggregate insights on my own posts.</td></tr>
+    <tr><td>Tailscale (Funnel)</td><td>Instagram requires a video to be available at a web address for it to fetch. For this, the app may make a single finished video temporarily available through Tailscale Funnel at a long, random address.</td></tr>
+    <tr><td>ntfy.sh</td><td>Short alert messages to my phone, for example "a draft is in your TikTok inbox" or "a post failed". These can include a video's title and a link back to my private dashboard.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>The app is built to support two optional services that are currently <strong>not in use</strong>:</p>
+<ul>
+  <li><strong>Cloudflare R2 storage:</strong> an alternative way to host videos for Instagram.</li>
+  <li><strong>The Anthropic (Claude) API:</strong> for help writing story scripts. If it is switched on in future, only story-writing prompts would be sent to Anthropic. No account tokens or platform data would be sent.</li>
+</ul>
+<p>Script writing, image generation, voice-overs, speech transcription and video editing all run locally on my computer. They do not send data to an outside AI service.</p>
+<p>Each platform handles what it receives under its own privacy policy:</p>
+<ul>
+  <li><a href="https://www.tiktok.com/legal/privacy-policy">TikTok</a></li>
+  <li><a href="https://policies.google.com/privacy">Google</a></li>
+  <li><a href="https://www.facebook.com/privacy/policy/">Meta</a></li>
+  <li><a href="https://tailscale.com/privacy-policy">Tailscale</a></li>
+  <li><a href="https://ntfy.sh/docs/privacy/">ntfy</a></li>
+</ul>
+<p>I may also disclose information if the law requires it.</p>
+
+<h2 id="retention">6. How long data is kept</h2>
+<ul>
+  <li><strong>Tokens and account details:</strong> kept until I disconnect that account in the app, which deletes them straight away. Platform tokens also expire on the platform's own schedule. The app requests a fresh one only while the account stays connected.</li>
+  <li><strong>Temporary public video copies</strong> (for Instagram): deleted automatically after 7 days.</li>
+  <li><strong>Story chapters I reject:</strong> their files and records are deleted when I discard them.</li>
+  <li><strong>Everything else</strong> (videos, transcripts, post records, performance figures and logs): kept on my computer until I delete it. There is currently no automatic deletion schedule for these.</li>
+</ul>
+<p>Videos already published are held by the platform where they were posted. Removing them from the app does not remove them from the platform. They have to be deleted on that platform.</p>
+
+<h2 id="delete">7. Disconnecting and deleting data</h2>
+<ul>
+  <li><strong>Disconnect in the app:</strong> Settings &gt; Accounts &gt; <em>Disconnect</em> deletes that account's stored tokens and account details from the app. The developer-app keys stay, so the account can be reconnected later.</li>
+  <li><strong>Revoke on the platform:</strong> disconnecting in the app does not tell the platform. To withdraw the permission completely, revoke the app's access on the platform as well. In TikTok, open your profile, go to Settings and privacy &gt; Security &gt; Manage app permissions, and remove Timestamp Gold Studio. Google and Meta have similar settings for connected apps.</li>
+  <li><strong>Delete everything:</strong> deleting the app's local data folder removes all stored tokens, records, logs and videos from my computer.</li>
+</ul>
+<p>If your own content or likeness appears in a Timestamp Clips video and you want it removed, contact me at the address below. I will review the request and remove the clip where appropriate.</p>
+
+<h2 id="children">8. Children</h2>
+<p>The app is not a service for the public, and it does not knowingly collect information from children.</p>
+
+<h2 id="changes">9. Changes to this policy</h2>
+<p>If the app's data handling changes, I will update this page and its date. Material changes will be reflected here before they take effect.</p>
+
+<h2 id="contact">10. Contact</h2>
+<p>For questions about this policy, data requests or removal requests, email <a href="mailto:timestampgold@gmail.com">timestampgold@gmail.com</a>.</p>
+</main>
+
+<footer>
+  <p>© 2026 Timestamp Gold · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+</body>
+</html>
